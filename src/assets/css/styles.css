@@ -11850,15 +11850,79 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.hero-home {
-  background-image: url(../images/fondo.jpg);
-  background-size: cover;
-  padding-top: 50px;
-  height: 90vh;
+.quicksand-txt {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
-  background-color: black;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-home {
+  background: url("../images/fondo3.png");
+  padding-top: 20px;
+  height: 50vh;
+  background-blend-mode: lighten;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+}
+
+.logo-hero {
+  z-index: 1;
+}
+
+.particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.seccion-1 {
+  background: url("../images/mudra1.png");
+  background-size: cover;
+  margin-top: -220px;
+  height: 90vh;
+}
+
+.fade-mask {
+  --fade-amount: 15%;
+  mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(80% - var(--fade-amount)), black calc(30% - var(--fade-amount)), black calc(10% - var(--fade-amount)), transparent);
+}
+
+.s-discography .card-disco {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: red;
+  background-clip: border-box;
+  border: 0.5px solid black;
+  margin: 10px;
+}
+.s-discography .card-disco img {
+  width: 100%;
+  height: auto;
+}
+.s-discography .card-disco .card-body {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+}
+.s-discography .card-disco.disable {
+  opacity: 0; /* Hace que el div sea transparente */
+}
+
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
